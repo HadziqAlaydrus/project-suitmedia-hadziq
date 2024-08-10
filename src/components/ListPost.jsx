@@ -14,6 +14,7 @@ const ListPost = () => {
   const [loading, setLoading] = useState(true);
 
   console.log(posts);
+  console.log(posts[0]?.small_image[0].url);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -106,7 +107,7 @@ const ListPost = () => {
               className="border rounded overflow-hidden shadow-md"
             >
               <img
-                src={post.small_image}
+                src="https://media.licdn.com/dms/image/C5622AQECB2XX284v0g/feedshare-shrink_800/0/1673580203420?e=2147483647&v=beta&t=rTVrk5OpWDmx6o3fe0OKGepf2Q3hqhiglQJxxYJBrus"
                 alt={post.title}
                 className="w-full h-32 object-cover"
                 loading="lazy"
